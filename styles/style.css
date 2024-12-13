@@ -22,14 +22,58 @@ body{
     justify-content: space-between; /*vai separar as partes do header do body e do footer*/
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
 header{
     display: flex; /*coloquei na lateral os icones*/
     align-items: center; /*centralizar os icones*/ 
     justify-content: space-between; /*espaçamento igual*/
 
+    margin: 20px;
+
+}
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+header a:hover{
+    background-color: red;
+}
+
+main{
+    margin: 20px;
+}
+
+#serviços{
+    text-align: center;
+}
+#serviços h1{ /*titulo do serviços*/
+    font-size: 2em;
+    color: red;
+    padding-bottom: 20px;
+}
+#serviços div{
+    margin: 20px;
+}
+#serviços div p{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#imgserv img{ /*imagens dos serviços*/
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    margin: 20px; padding: 20px;
+    background-color: rgb(61, 61, 61);
+}
+footer ul li{
+    justify-content: center;
 }
