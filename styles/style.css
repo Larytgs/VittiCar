@@ -1,0 +1,35 @@
+@charset "UTF8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior: smooth; /*rolagem suave*/
+    justify-content: space-between; /*vai separar as partes do header do body e do footer*/
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+
+    scroll-behavior: smooth;
+
+    box-sizing: content-box;
+    width: 99%;    /*alinhar a borda de fora*/
+    justify-content: space-between; /*vai separar as partes do header do body e do footer*/
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex; /*coloquei na lateral os icones*/
+    align-items: center; /*centralizar os icones*/ 
+    justify-content: space-between; /*espaçamento igual*/
+
+}
