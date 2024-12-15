@@ -13,11 +13,12 @@ html, body{
     scroll-margin-top: 5em;
 }
 body{
-    background-color: rgb(36, 36, 36);
-    color: aliceblue;
+    background-color: white;
+    color: black;
 
     box-sizing: content-box;
     width: 99%;    /*alinhar a borda de fora*/
+    font-size: 1.1em;
 }
 
 header{
@@ -33,7 +34,6 @@ header{
     margin-bottom: 20px;
     background-color: rgb(139, 79, 79);
     box-shadow: 0px 0px 10px black;
-    height: 50%;
 }
 header img{
     width: 100px;
@@ -64,12 +64,47 @@ header a:hover{
 
 main{
     margin: auto; padding: 10px;
-    min-width: 300px;
-    max-width: 1000px;
 }
+
+#marcas{
+    text-align: center;
+    margin: 30px;
+}
+#marcas h1{
+    margin-bottom: 20px;
+}
+
+
+#retifica{
+    text-align: center;
+    margin: 30px;
+}
+#retifica h1{
+    margin-bottom: 20px;
+}
+#retifica p{
+    padding-bottom: 50px;
+}
+#retifica div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+#retifica img{
+    width: 400px;
+    height: 400px;
+}
+#retifica ul{
+    text-align: left;
+    list-style-type: '\2714\00a0\00a0';
+    font-size: 1.2em;
+}
+
 
 #serviços{
     text-align: center;
+    margin: 20px;
 }
 #serviços h1{ /*titulo do serviços*/
     font-size: 2em;
@@ -83,12 +118,13 @@ main{
 }
 #serviços div{
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 #serviços img{ /*imagens dos serviços*/
     width: 100px;
     height: 100px;
 }
+
 
 
 footer{
@@ -97,12 +133,12 @@ footer{
 
     box-sizing: border-box;
     width: 101%;    /*alinhar a borda de fora*/
-    height: 400px;
+    height: 450px;
 }
 footer h1{
     text-align: center;
     font-size: 1.5em;
-    padding: 40px;
+    padding: 50px 40px;
 }
 #blocoFooter{
     display: flex;
@@ -110,10 +146,7 @@ footer h1{
     align-items: center;
 }
 #blocoFooter h3{
-    padding-bottom: 20px;
-}
-#blocoFooter p{
-    line-height: 0em; /*altura entre linhas*/
+    padding-bottom: 10px;
 }
 #blocoFooter a{
     text-decoration: none;
@@ -122,8 +155,14 @@ footer h1{
     line-height: 1em; /*altura entre linhas*/
 }
 
-footer .horario{
-    width: 500px;
+footer .horario img{
+    width: 35px;
+    height: 20px;
+}
+
+footer .local img{
+    width: 30px;
+    height: 30px;
 }
 
 footer .sociais{
