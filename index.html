@@ -11,8 +11,8 @@
     <header><!--cabeçalho-->
         <img src="imgs/LogoVitti.png" alt="">
 
-        <nav id="navOculta"><!--Botoes-->
-            <a style="text-decoration: underline 3px #0085FF;" href="#">Home</a>
+        <nav class="menu effect"><!--Menu-->
+            <a style="border-top: 3px solid #0085FF; padding-top: 10px;" href="#">Home</a>
             <a href="paginas/serviços.html">Serviços</a>
             <a href="paginas/blog.html">Blog</a>
             <a href="paginas/quemSomos.html">Quem somos</a>
@@ -27,8 +27,7 @@
             <article id="serviços">
                 <h1>Nossos Serviços</h1>
             
-                <article id="imgserv">
-                    <article>
+                <article id="blocoServ">
                     <div>
                         <img src="/imgs/LogoVitti.png" alt="">
                         <h2>Manutenção de freios</h2>
@@ -74,26 +73,38 @@
     </aside>
 
     <footer><!--rodapé-->
-        <h2>ATENDIMENTO E LOCALIZAÇÃO</h2>
-        <div>
-                <h3>Segunda á sexta</h3>
-            <ul>
-                <li>8h as 12h <img src="#" alt="">
-                <li>13:30 as 18h <img src="#" alt="">
-            </ul>
-            <h3>Sabádo em domingo</h3>
-            <ul>
-                <li>Fechado <img src="#" alt="">
-            </ul>
+        <h1>ATENDIMENTO E LOCALIZAÇÃO</h1>
+        <div id="blocoFooter">
+            <div id="horario">
+                <div>
+                    <h3>Segunda á sexta</h3>
+                    <div><p>8h as 12h</p> <img src="#" alt="on"></div>
+                    <div><p>13:30 as 18h</p> <img src="#" alt="on"></div>
+                </div>
+                <div>
+                    <h3>Sabádo em domingo</h3>
+                    <div><p>Fechado</p> <img src="#" alt="off"></div>
+                </div>
+            </div>
+
+            <div id="local">
+                <h3>Onde estamos?</h3>
+                <div>
+                    <img src="#" alt="mapa"><!--Colocar mapa-->
+                    <a href="https://www.google.com/maps/@-26.3227036,-48.8449427,3a,75y,84.15h,90t/data=!3m7!1e1!3m5!1s3MkEc0YRBaI0hOevuxi79A!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D3MkEc0YRBaI0hOevuxi79A%26yaw%3D84.15!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">R. Santa Catarina, 17, Floresta - Joinvilhe SC</a>
+                </div>
+            </div>
+
+            <div id="sociais">
+                <div>
+                    <h3>Contate-nos</h3>
+                    <a href="https://www.instagram.com/vitticarservice/" target="_blank"><img src="#" alt="insta"></a>
+                    <a href="https://w.app/VittiCarService" target="_blank"><img src="#" alt="whats"></a>
+                    <a href="Vitticars@gmail.com" target="_blank"><img src="#" alt="email"></a>
+                </div>
+                <a href="#"><img src="#" alt="">(47) 3202-9440</a>
+            </div>
         </div>
-
-        <br>
-
-        <h2>Onde estamos?</h2>
-        <img src="#" alt=""><h3>R. Santa Catarina, 17, Floresta - Joinvilhe SC</h3>
-        <!--Colocar mapa-->
-        <h3>(47) 9 8894-4270</h3>
-        <h3>(47) 3202-9440</h3>
     </footer>
 </body>
 </html>

@@ -6,46 +6,66 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-html{
-    scroll-behavior: smooth; /*rolagem suave*/
-    justify-content: space-between; /*vai separar as partes do header do body e do footer*/
+html, body{
+    scroll-behavior: smooth; /*rolagem suave*/    
 }
-
+:target {
+    scroll-margin-top: 5em;
+}
 body{
     background-color: rgb(36, 36, 36);
     color: aliceblue;
 
-    scroll-behavior: smooth;
-
     box-sizing: content-box;
     width: 99%;    /*alinhar a borda de fora*/
-    justify-content: space-between; /*vai separar as partes do header do body e do footer*/
 }
 
 header{
+    position: sticky; /*grudavel*/
+    top: -1px;
+    z-index: 1; /*Assim, ele ficará na frente de tds*/
+
     display: flex; /*coloquei na lateral os icones*/
-    align-items: center; /*centralizar os icones*/ 
     justify-content: space-between; /*espaçamento igual*/
+    box-sizing: border-box;
+    width: 101%;    /*alinhar a borda de fora*/
 
-    margin: 20px;
-
+    margin-bottom: 20px;
+    background-color: rgb(139, 79, 79);
+    box-shadow: 0px 0px 10px black;
+    height: 50%;
 }
 header img{
     width: 100px;
     height: 100px;
     border-radius: 50px;
+    margin: 20px;
+}
+header .menu{
+    margin: 20px 15px 10px 10px;
+}
+header #menuResponsivo{ /*ainda vou fzr*/
+    display: none;
+}
+.effect {
+
 }
 header a{
     text-decoration: none;
-    color: white;
-    padding: 5px;
+    color: white; 
+    padding: 10px;
+    font-size: 1.2em;
 }
 header a:hover{
-    background-color: red;
+    color: #0085FF;
+    border-top: 3px solid #0085FF; padding-top: 10px;
+    
 }
 
 main{
-    margin: 20px;
+    margin: auto; padding: 10px;
+    min-width: 300px;
+    max-width: 1000px;
 }
 
 #serviços{
@@ -54,26 +74,50 @@ main{
 #serviços h1{ /*titulo do serviços*/
     font-size: 2em;
     color: red;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+}
+#blocoServ{
+    display: block;
+    columns: 2;
+    width: 500px;
 }
 #serviços div{
-    margin: 20px;
+    padding: 10px;
+    border: 2px solid white;
 }
-#serviços div p{
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#imgserv img{ /*imagens dos serviços*/
+#serviços img{ /*imagens dos serviços*/
     width: 100px;
     height: 100px;
 }
 
+
 footer{
-    margin: 20px; padding: 20px;
-    background-color: rgb(61, 61, 61);
+    background-color: white; color: black;
+    padding: 30px;
+
+    box-sizing: border-box;
+    width: 101%;    /*alinhar a borda de fora*/
+    height: 400px;
 }
-footer ul li{
-    justify-content: center;
+footer h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 40px;
+}
+#blocoFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#blocoFooter h3{
+    padding-bottom: 20px;
+}
+#blocoFooter p{
+    line-height: 0em; /*altura entre linhas*/
+}
+#blocoFooter a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    line-height: 1em; /*altura entre linhas*/
 }
