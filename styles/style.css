@@ -68,11 +68,31 @@ main{
 
 #texto1{
     text-align: center;
-    margin: 30px; padding: 20px;
+    height: 500px;
+    margin: 30px;
+    padding: 20px;
     background-color: #EDEDED;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#texto1 div{
+    padding-top: 10px;
 }
 #texto1 h1{
     margin-bottom: 20px;
+}
+#texto1 p{
+    width: 600px;
+}
+#texto1 img{
+    width: 800ps;
+    height: 300px;
+}
+#imgMotor{
+    width: 400px;
+    height: 400px;
 }
 
 #marcas{
@@ -81,6 +101,8 @@ main{
 }
 #marcas h1{
     margin-bottom: 20px;
+    font: 2em;
+    font-weight: 100;
 }
 
 
@@ -91,6 +113,8 @@ main{
 }
 #retifica h1{
     padding: 20px;
+    font: 2em;
+    font-weight: 100;
 }
 #retifica p{
     padding-bottom: 50px;
