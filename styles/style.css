@@ -78,9 +78,10 @@ main{
 #retifica{
     text-align: center;
     margin: 30px;
+    background-color: #EDEDED;
 }
 #retifica h1{
-    margin-bottom: 20px;
+    padding: 20px;
 }
 #retifica p{
     padding-bottom: 50px;
@@ -89,11 +90,12 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 900px;
 }
 #retifica img{
     width: 400px;
     height: 400px;
+    margin: 0px 50px;
 }
 #retifica ul{
     text-align: left;
