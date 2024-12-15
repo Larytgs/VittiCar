@@ -66,9 +66,18 @@ main{
     margin: auto; padding: 10px;
 }
 
+#texto1{
+    text-align: center;
+    margin: 30px; padding: 20px;
+    background-color: #EDEDED;
+}
+#texto1 h1{
+    margin-bottom: 20px;
+}
+
 #marcas{
     text-align: center;
-    margin: 30px;
+    margin: 30px; padding: 20px;
 }
 #marcas h1{
     margin-bottom: 20px;
@@ -130,7 +139,7 @@ main{
 
 
 footer{
-    background-color: white; color: black;
+    background-color: #EDEDED; color: black;
     padding: 30px;
 
     box-sizing: border-box;
