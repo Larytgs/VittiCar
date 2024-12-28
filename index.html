@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header1 header2"><!--cabeçalho-->
-        <img src="imgs/LogoVitti.png" alt="">
+    <header class="header1 header2" id="menu"><!--cabeçalho-->
+        <img id="logo" src="imgs/LogoVitti.png" alt="">
 
         <nav class="menu effect"><!--Menu-->
             <a style="border-top: 3px solid #0085FF; padding-top: 10px;" href="#">Home</a>
@@ -36,7 +36,7 @@
                 <p>Seu carro merece a <big>VittiCar</big></p>
             </div>
             <div>
-                <img src="imgs/oficina.png" alt="fotodaficina">
+                <img src="imgs/oficina.jpg" alt="fotodaficina">
             </div>
         </section>
         
@@ -169,14 +169,23 @@
 
     <script src=""></script>
     
-    <script type="text/javascript">
-        $(document).on("scroll",function(){
-            if($(document).scrollTop()>100){ //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
-                $("header").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
-            } else{
-                $("header").removeClass("small").addClass("large"); //VOLTA P MENU GRANDE ORIGINAL
-            }
-        });
-        </script>
+    <script>
+        /*Parte do header, diminui o tamanho do menu no momento em que houver scroll*/
+        const menu = document.querySelector('#menu');
+        const img = document.querySelector('#logo');
+
+        function diminuirMenu() {
+        if (window.scrollY > 60) {
+            menu.style.height = '110px';
+            img.style.height = '90px'; img.style.width = '90px'; img.style.margin = '10px 100px'
+        } else {
+            menu.style.height = '500px'; 
+            img.style.height = '150px'; img.style.width = '150px'; img.style.margin = '20px'
+        }
+        }
+
+        window.addEventListener('scroll', diminuirMenu);
+
+    </script>
 </body>
 </html>
