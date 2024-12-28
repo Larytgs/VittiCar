@@ -166,6 +166,17 @@
             </div>
         </div>
     </footer>
-</body>
 
+    <script src=""></script>
+    
+    <script type="text/javascript">
+        $(document).on("scroll",function(){
+            if($(document).scrollTop()>100){ //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
+                $("header").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
+            } else{
+                $("header").removeClass("small").addClass("large"); //VOLTA P MENU GRANDE ORIGINAL
+            }
+        });
+        </script>
+</body>
 </html>
