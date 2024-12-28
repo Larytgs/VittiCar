@@ -199,8 +199,9 @@ main #curiosidades img{
     border: 2px solid black;
 }
 #serviços img{ /*imagens dos serviços*/
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
 }
 
 
