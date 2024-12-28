@@ -32,7 +32,7 @@ body{
     width: 101%;    /*alinhar a borda de fora*/
     height: 200px;
 
-    background-color: rgb(139, 79, 79);
+    background-color: black;
     box-shadow: 0px 0px 10px black;
 }
 
