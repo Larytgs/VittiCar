@@ -80,7 +80,7 @@
             <article id="serviços">
                 <h1>Nossos Serviços</h1>
             
-                <article id="blocoServ">
+                <article class="blocoServ">
                     <div>
                         <img src="/imgs/serviços/freio.png" alt="">
                         <h2>Manutenção de freios</h2>
@@ -96,6 +96,13 @@
                         <h2>Scanner</h2>
                         <p>É uma das ferramentas mais importante, pois permite identificar problemas no funcionamento dos veículos de forma mais rápida e eficiente.</p>
                     </div>
+                    <div>
+                        <img src="/imgs/serviços/scanner.jpg" alt="">
+                        <h2>Scanner</h2>
+                        <p>É uma das ferramentas mais importante, pois permite identificar problemas no funcionamento dos veículos de forma mais rápida e eficiente.</p>
+                    </div>
+                </article>
+                <article class="blocoServ">
                     <div>
                         <img src="/imgs/serviços/amortecedor.jpg" alt="">
                         <h2>Troca de amortecedores</h2>
@@ -167,25 +174,6 @@
         </div>
     </footer>
 
-    <script src=""></script>
-    
-    <script>
-        /*Parte do header, diminui o tamanho do menu no momento em que houver scroll*/
-        const menu = document.querySelector('#menu');
-        const img = document.querySelector('#logo');
-
-        function diminuirMenu() {
-        if (window.scrollY > 60) {
-            menu.style.height = '110px';
-            img.style.height = '90px'; img.style.width = '90px'; img.style.margin = '10px 100px'
-        } else {
-            menu.style.height = '500px'; 
-            img.style.height = '150px'; img.style.width = '150px'; img.style.margin = '20px'
-        }
-        }
-
-        window.addEventListener('scroll', diminuirMenu);
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
