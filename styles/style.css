@@ -111,11 +111,11 @@ main #curiosidades img{
 }
 
 
-#texto1{
+#texto1 section{
     text-align: center;
     height: 500px;
-    padding: 20px; padding-bottom: 50px;
-    background-color: #EDEDED;
+    padding: 20px; padding-bottom: 100px;
+    background-color: rgba(128, 128, 128, 0.253);
 
     display: flex;
     justify-content: space-between;
@@ -136,14 +136,14 @@ main #curiosidades img{
     height: 300px;
 }
 
-#imagemMotor img{
+#imagemMotor{ /*imagem do motor suspensa*/
+    display: flex;
+    justify-content: center;
+}
+#imagemMotor img{ 
     width: 400px;
     height: 400px;
-
-    background-color: #0085FF;
-    display: flex;
-    align-items: center;
-    z-index: 1; /*Assim, ele ficará na frente de tds*/
+    margin-top: -15%; /*deixando a imagem em cima da margem do texto1*/
 }
 
 
@@ -160,7 +160,7 @@ main #curiosidades img{
 
 #retifica{
     text-align: center;
-    background-color: #EDEDED;
+    background-color: rgba(128, 128, 128, 0.253);
     padding-top: 20px; padding-bottom: 50px;
 }
 #retifica h1{
@@ -225,7 +225,7 @@ main #curiosidades img{
 
 
 footer{
-    background-color: #EDEDED; color: black;
+    background-color: rgba(128, 128, 128, 0.253); color: black;
     padding: 30px;
 
     box-sizing: border-box;
