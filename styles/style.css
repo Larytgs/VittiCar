@@ -114,7 +114,7 @@ main #curiosidades img{
 #texto1{
     text-align: center;
     height: 500px;
-    padding: 20px;
+    padding: 20px; padding-bottom: 50px;
     background-color: #EDEDED;
 
     display: flex;
@@ -126,6 +126,7 @@ main #curiosidades img{
 }
 #texto1 h1{
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 #texto1 p{
     width: 600px;
@@ -134,10 +135,17 @@ main #curiosidades img{
     width: 800ps;
     height: 300px;
 }
-#imgMotor{
+
+#imagemMotor img{
     width: 400px;
     height: 400px;
+
+    background-color: #0085FF;
+    display: flex;
+    align-items: center;
+    z-index: 1; /*Assim, ele ficará na frente de tds*/
 }
+
 
 #marcas{
     text-align: center;
@@ -153,11 +161,13 @@ main #curiosidades img{
 #retifica{
     text-align: center;
     background-color: #EDEDED;
+    padding-top: 20px; padding-bottom: 50px;
 }
 #retifica h1{
     padding: 20px;
     font: 2em;
     font-weight: 100;
+    text-decoration: underline;
 }
 #retifica p{
     padding-bottom: 50px;
@@ -166,7 +176,6 @@ main #curiosidades img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
 }
 #retifica img{
     width: 400px;
@@ -177,6 +186,9 @@ main #curiosidades img{
     text-align: left;
     list-style-type: '\2714\00a0\00a0';
     font-size: 1.2em;
+    columns: 2;
+    width: 750px;
+    font-weight: bold;
 }
 
 
@@ -196,8 +208,8 @@ main #curiosidades img{
 }
 .blocoServ div{
     width: 300px;
-    padding: 5px;
-    box-shadow: 1px 2px 2px 2px black;
+    padding: 5px; padding-bottom: 15px;
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.76);
 }
 .blocoServ img{ /*imagens dos serviços*/
     width: 200px;
@@ -210,7 +222,6 @@ main #curiosidades img{
 .blocoServ p{
     font-size: 1em;
 }
-
 
 
 footer{
@@ -226,6 +237,7 @@ footer h1{
     font-size: 1.5em;
     padding: 50px 40px;
 }
+
 #blocoFooter{
     display: flex;
     justify-content: space-between;
