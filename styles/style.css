@@ -21,7 +21,7 @@ body{
     font-size: 1.1em;
 }
 
-.header1{ /*arrumar para ele diminuir qnd rolar p baixo*/
+header{
     position: sticky; /*grudavel*/
     top: -1px;
     z-index: 1; /*Assim, ele ficará na frente de tds*/
@@ -30,13 +30,14 @@ body{
     justify-content: space-between; /*espaçamento igual*/
     box-sizing: border-box;
     width: 101%;    /*alinhar a borda de fora*/
-    height: 200px;
+    height: 600px;
 
     background-color: black;
     background-image: url(/imgs/oficina.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    
     /*Auto: imagem automatica
     Contain: a imagem 100% exibida, mas distorce
     Cover: ele adapta a imagem em todo, de acordo
@@ -48,19 +49,18 @@ header img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin: 20px;
 }
-header .menu{
-    margin: 20px 15px 10px 10px;
+header .effect{
+    margin: 20px 50px 10px 10px;
 }
 header #menuResponsivo{ /*ainda vou fzr*/
     display: none;
 }
-.effect {
-
-}
 header a{
     text-decoration: none;
-    color: white; 
+    color: black; 
+    font-weight: bold;
     padding: 10px;
     font-size: 1.2em;
 }
@@ -71,8 +71,7 @@ header a:hover{
 }
 
 main{
-    padding: 10px;
-    
+    width: 101%;
 }
 
 /*Pagina de Curiosidades*/
@@ -111,7 +110,9 @@ main #curiosidades img{
     border-radius: 10px;
 }
 
-
+#texto1{
+    width: 100%;
+}
 #texto1 section{
     text-align: center;
     height: 500px;
@@ -188,8 +189,10 @@ main #curiosidades img{
     list-style-type: '\2714\00a0\00a0';
     font-size: 1.2em;
     columns: 2;
-    width: 750px;
+    width: 800px;
     font-weight: bold;
+
+    list-style-position: inside; /*deixar a lista organizada*/
 }
 
 
