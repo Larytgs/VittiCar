@@ -13,7 +13,6 @@ html, body{
     scroll-margin-top: 5em;
 }
 body{
-    background-color: white;
     color: black;
 
     box-sizing: content-box;
@@ -32,7 +31,7 @@ header{
     width: 101%;    /*alinhar a borda de fora*/
     height: 600px;
 
-    background-color: black;
+    background-color: rgba(128, 128, 128, 0.253);
     background-image: url(/imgs/oficina.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +71,7 @@ header a:hover{
 
 main{
     width: 101%;
-    padding-top: 22%;
+    padding-top: 10%;
 }
 main h1{
     color: red;
@@ -162,7 +161,64 @@ main #curiosidades img{
     margin-bottom: 20px;
     font: 2em;
 }
+#marcas img{
+    width: 100px; height: 100px;
+}
+#galery{
+    /*parte comentada do teteu width: 1300px; /*largura e altura do carrossel*/
+    width: 100%;/*inclusao do teteu*/
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+#galery #fotos{
+    display: flex;/*inclusao do teteu*/
+    width: 1600%;/*inclusao do teteu*/
+    animation-name: animacao;
+    animation-duration: 90s;
+    animation-iteration-count: infinite alternate;
+}
+#galery #fotos img{
+    padding-left: 50px;
+    padding-top: 40px;
+}
+@keyframes animacao {
+    0% { margin-left: 0%; } /* Começo: Primeira imagem visível */
+    5.555% { margin-left: 0%; }
+    11.111% { margin-left: -100%; }
+    16.666% { margin-left: -100%; }
+    22.222% { margin-left: -200%; }
+    27.777% { margin-left: -200%; }
+    33.333% { margin-left: -300%; }
+    38.888% { margin-left: -300%; }
+    44.444% { margin-left: -400%; }
+    50% { margin-left: -400%; }
+    55.555% { margin-left: -500%; }
+    61.111% { margin-left: -500%; }
+    66.666% { margin-left: -600%; }
+    72.222% { margin-left: -600%; }
+    77.777% { margin-left: -700%; }
+    83.333% { margin-left: -700%; }
+    88.888% { margin-left: -800%; }
+    94.444% { margin-left: -800%; }
+    100% { margin-left: -1700%; } /* Última imagem visível */
 
+/* Animação para ir da direita para a esquerda */
+    200% { margin-left: -1600%; } /* Inicia a segunda parte: última imagem */
+    205% { margin-left: -1700%; } /* Primeira imagem do lado direito */
+    210% { margin-left: -1800%; } /* 2ª imagem para esquerda */
+}
+/*@keyframes animacao{ esse eh o original 
+    0% { margin-left: 0;} 
+    20% {margin-left: 0;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+}*/
 
 #retifica{
     text-align: center;
