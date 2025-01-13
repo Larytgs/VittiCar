@@ -72,6 +72,13 @@ header a:hover{
 
 main{
     width: 101%;
+    padding-top: 22%;
+}
+main h1{
+    color: red;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: bold;
 }
 
 /*Pagina de Curiosidades*/
@@ -80,9 +87,6 @@ main #blog{
     padding: 10px;
     display: block;
     justify-content: center;                       /*centralizar*/
-}
-main #h1Curiosidades{
-    text-align: center;
 }
 main #curiosidades{ /*todos os blocos*/
     columns: 2;
@@ -116,7 +120,7 @@ main #curiosidades img{
 #texto1 section{
     text-align: center;
     height: 500px;
-    padding: 20px; padding-bottom: 100px;
+    padding: 20px; padding-bottom: 150px;
     background-color: rgba(128, 128, 128, 0.253);
 
     display: flex;
@@ -127,8 +131,9 @@ main #curiosidades img{
     padding-top: 10px;
 }
 #texto1 h1{
-    margin-bottom: 20px;
-    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: bold; font-size: 2em; color: black;
+    text-decoration: underline; font-style: italic;
 }
 #texto1 p{
     width: 600px;
@@ -156,7 +161,6 @@ main #curiosidades img{
 #marcas h1{
     margin-bottom: 20px;
     font: 2em;
-    font-weight: 100;
 }
 
 
@@ -168,8 +172,6 @@ main #curiosidades img{
 #retifica h1{
     padding: 20px;
     font: 2em;
-    font-weight: 100;
-    text-decoration: underline;
 }
 #retifica p{
     padding-bottom: 50px;
@@ -201,9 +203,8 @@ main #curiosidades img{
     margin: 20px;
 }
 #serviços h1{ /*titulo do serviços*/
-    font-size: 2em;
+    font-size: 2em; 
     color: red;
-    padding-bottom: 25px;
 }
 .blocoServ{
     display: flex;
