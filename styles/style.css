@@ -182,6 +182,7 @@ main #curiosidades img{
     padding-left: 50px;
     padding-top: 40px;
 }
+
 @keyframes animacao {
     0% { margin-left: 0%; } /* Começo: Primeira imagem visível */
     5.555% { margin-left: 0%; }
